@@ -1,6 +1,14 @@
 import React from 'react';
 import './App.css';
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+/*import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";*/
+
 import client1 from './img/bg-img/client-1.jpg';
 import client2 from './img/bg-img/client-2.jpg';
 import client3 from './img/bg-img/client-3.jpg';
@@ -22,6 +30,13 @@ import {Link} from "react-router-dom";
 
 
 const App = () => {
+    let settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <div>
             {/* Preloader Start */}
@@ -360,7 +375,9 @@ const App = () => {
                     <div className="row">
                         <div className="col-12">
                             {/* App Screenshots Slides  */}
-                            <div className="app_screenshots_slides owl-carousel">
+                            <OwlCarousel
+                                className="app_screenshots_slides owl-theme owl-carousel" loop margin={10} dots
+                                dotsEach>
                                 <div className="single-shot">
                                     <img src={app1} alt=""/>
                                 </div>
@@ -379,7 +396,7 @@ const App = () => {
                                 <div className="single-shot">
                                     <img src={app3} alt=""/>
                                 </div>
-                            </div>
+                            </OwlCarousel>
                         </div>
                     </div>
                 </div>

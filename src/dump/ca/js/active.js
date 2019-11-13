@@ -65,7 +65,6 @@
             focusOnSelect: true,
             slide: 'div',
             autoplay: true,
-            centerMode: true,
             centerPadding: '30px',
             mobileFirst: true,
             prevArrow: '<i class="fa fa-angle-left"></i>',
