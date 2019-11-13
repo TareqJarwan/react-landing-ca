@@ -1,13 +1,14 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import './App.css';
 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-/*import Slider from "react-slick";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";*/
+import "slick-carousel/slick/slick-theme.css";
 
 import client1 from './img/bg-img/client-1.jpg';
 import client2 from './img/bg-img/client-2.jpg';
@@ -26,7 +27,6 @@ import app2 from './img/scr-img/app-2.jpg';
 import app3 from './img/scr-img/app-3.jpg';
 import app4 from './img/scr-img/app-4.jpg';
 import app5 from './img/scr-img/app-5.jpg';
-import {Link} from "react-router-dom";
 
 
 const App = () => {
@@ -34,6 +34,7 @@ const App = () => {
         dots: true,
         infinite: true,
         speed: 500,
+        fade: true,
         slidesToShow: 1,
         slidesToScroll: 1
     };
@@ -190,14 +191,14 @@ const App = () => {
                                     <div className="app-download-area">
                                         <div className="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
                                             {/* Google Store Btn */}
-                                            <Link to="#">
+                                            <Link to="#" style={{ textDecoration: 'none', color: 'white' }}>
                                                 <i className="fa fa-android"/>
                                                 <p className="mb-0"><span>available on</span> Google Store</p>
                                             </Link>
                                         </div>
                                         <div className="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
                                             {/* Apple Store Btn */}
-                                            <Link to="#">
+                                            <Link to="#" style={{ textDecoration: 'none', color: 'white' }}>
                                                 <i className="fa fa-apple"/>
                                                 <p className="mb-0"><span>available on</span> Apple Store</p>
                                             </Link>
@@ -377,7 +378,8 @@ const App = () => {
                             {/* App Screenshots Slides  */}
                             <OwlCarousel
                                 className="app_screenshots_slides owl-theme owl-carousel" loop margin={10} dots
-                                dotsEach>
+                                items={5}
+                                dotsEach autoplay autoplayHoverPause center>
                                 <div className="single-shot">
                                     <img src={app1} alt=""/>
                                 </div>
@@ -521,113 +523,114 @@ const App = () => {
                     <div className="row justify-content-center">
                         <div className="col-12 col-md-10">
                             <div className="slider slider-for">
-                                {/* Client Feedback Text  */}
-                                <div className="client-feedback-text text-center">
-                                    <div className="client">
-                                        <i className="fa fa-quote-left" aria-hidden="true"/>
+                                <Slider {...settings}>
+                                    <div className="client-feedback-text text-center">
+                                        <div className="client">
+                                            <i className="fa fa-quote-left" aria-hidden="true"/>
+                                        </div>
+                                        <div className="client-description text-center">
+                                            <p>“ I have been using it for a number of years. I use Colorlib for
+                                                usability
+                                                testing. It's great for taking images and making clickable image
+                                                prototypes
+                                                that do the job and save me the coding time and just the general hassle
+                                                of
+                                                hosting. ”</p>
+                                        </div>
+                                        <div className="star-icon text-center">
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                        </div>
+                                        <div className="client-name text-center">
+                                            <h5>Aigars Silkalns</h5>
+                                            <p>Ceo Colorlib</p>
+                                        </div>
+                                        <div className="client-thumbnail">
+                                            <img src={client1} alt="" className="mx-auto my-2"/>
+                                        </div>
                                     </div>
-                                    <div className="client-description text-center">
-                                        <p>“ I have been using it for a number of years. I use Colorlib for usability
-                                            testing. It's great for taking images and making clickable image prototypes
-                                            that do the job and save me the coding time and just the general hassle of
-                                            hosting. ”</p>
+                                    <div className="client-feedback-text text-center">
+                                        <div className="client">
+                                            <i className="fa fa-quote-left" aria-hidden="true"/>
+                                        </div>
+                                        <div className="client-description text-center">
+                                            <p>“ I use Colorlib for usability testing. It's great for taking images and
+                                                making clickable image prototypes that do the job and save me the coding
+                                                time and just the general hassle of hosting. ”</p>
+                                        </div>
+                                        <div className="star-icon text-center">
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                        </div>
+                                        <div className="client-name text-center">
+                                            <h5>Jennifer</h5>
+                                            <p>Developer</p>
+                                        </div>
+                                        <div className="client-thumbnail">
+                                            <img src={client2} alt="" className="mx-auto my-2"/>
+                                        </div>
                                     </div>
-                                    <div className="star-icon text-center">
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
+                                    <div className="client-feedback-text text-center">
+                                        <div className="client">
+                                            <i className="fa fa-quote-left" aria-hidden="true"/>
+                                        </div>
+                                        <div className="client-description text-center">
+                                            <p>“ I have been using it for a number of years. I use Colorlib for
+                                                usability
+                                                testing. It's great for taking images and making clickable image
+                                                prototypes
+                                                that do the job.”</p>
+                                        </div>
+                                        <div className="star-icon text-center">
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                        </div>
+                                        <div className="client-name text-center">
+                                            <h5>Helen</h5>
+                                            <p>Marketer</p>
+                                        </div>
+                                        <div className="client-thumbnail">
+                                            <img src={client3} alt="" className="mx-auto my-2"/>
+                                        </div>
                                     </div>
-                                    <div className="client-name text-center">
-                                        <h5>Aigars Silkalns</h5>
-                                        <p>Ceo Colorlib</p>
+                                    <div className="client-feedback-text text-center">
+                                        <div className="client">
+                                            <i className="fa fa-quote-left" aria-hidden="true"/>
+                                        </div>
+                                        <div className="client-description text-center">
+                                            <p>“ I have been using it for a number of years. I use Colorlib for
+                                                usability
+                                                testing. It's great for taking images and making clickable image
+                                                prototypes
+                                                that do the job and save me the coding time and just the general hassle
+                                                of
+                                                hosting. ”</p>
+                                        </div>
+                                        <div className="star-icon text-center">
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                            <i className="ion-ios-star"/>
+                                        </div>
+                                        <div className="client-name text-center">
+                                            <h5>Henry smith</h5>
+                                            <p>Developer</p>
+                                        </div>
+                                        <div className="client-thumbnail">
+                                            <img src={client1} alt="" className="mx-auto my-2"/>
+                                        </div>
                                     </div>
-                                </div>
-                                {/* Client Feedback Text  */}
-                                <div className="client-feedback-text text-center">
-                                    <div className="client">
-                                        <i className="fa fa-quote-left" aria-hidden="true"/>
-                                    </div>
-                                    <div className="client-description text-center">
-                                        <p>“ I use Colorlib for usability testing. It's great for taking images and
-                                            making clickable image prototypes that do the job and save me the coding
-                                            time and just the general hassle of hosting. ”</p>
-                                    </div>
-                                    <div className="star-icon text-center">
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                    </div>
-                                    <div className="client-name text-center">
-                                        <h5>Jennifer</h5>
-                                        <p>Developer</p>
-                                    </div>
-                                </div>
-                                {/* Client Feedback Text  */}
-                                <div className="client-feedback-text text-center">
-                                    <div className="client">
-                                        <i className="fa fa-quote-left" aria-hidden="true"/>
-                                    </div>
-                                    <div className="client-description text-center">
-                                        <p>“ I have been using it for a number of years. I use Colorlib for usability
-                                            testing. It's great for taking images and making clickable image prototypes
-                                            that do the job.”</p>
-                                    </div>
-                                    <div className="star-icon text-center">
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                    </div>
-                                    <div className="client-name text-center">
-                                        <h5>Helen</h5>
-                                        <p>Marketer</p>
-                                    </div>
-                                </div>
-                                {/* Client Feedback Text  */}
-                                <div className="client-feedback-text text-center">
-                                    <div className="client">
-                                        <i className="fa fa-quote-left" aria-hidden="true"/>
-                                    </div>
-                                    <div className="client-description text-center">
-                                        <p>“ I have been using it for a number of years. I use Colorlib for usability
-                                            testing. It's great for taking images and making clickable image prototypes
-                                            that do the job and save me the coding time and just the general hassle of
-                                            hosting. ”</p>
-                                    </div>
-                                    <div className="star-icon text-center">
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                        <i className="ion-ios-star"/>
-                                    </div>
-                                    <div className="client-name text-center">
-                                        <h5>Henry smith</h5>
-                                        <p>Developer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Client Thumbnail Area */}
-                        <div className="col-12 col-md-6 col-lg-5">
-                            <div className="slider slider-nav">
-                                <div className="client-thumbnail">
-                                    <img src={client3} alt=""/>
-                                </div>
-                                <div className="client-thumbnail">
-                                    <img src={client2} alt=""/>
-                                </div>
-                                <div className="client-thumbnail">
-                                    <img src={client1} alt=""/>
-                                </div>
-                                <div className="client-thumbnail">
-                                    <img src={client2} alt=""/>
-                                </div>
+                                </Slider>
                             </div>
                         </div>
                     </div>

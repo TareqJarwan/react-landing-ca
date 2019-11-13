@@ -472,22 +472,22 @@ p {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #cec1f4;
+    color: #cec1f4 !important;
     opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #cec1f4;
+    color: #cec1f4 !important;
     opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-    color: #cec1f4;
+    color: #cec1f4 !important;
     opacity: 1;
 }
 
 .form-control::placeholder {
-    color: #cec1f4;
+    color: #cec1f4 !important;
     opacity: 1;
 }
 
@@ -825,9 +825,9 @@ p {
     margin: 50px 6px 0;
 }
 
-.app-screenshots-area .owl-dot.active {
-    background-color: #fb397d;
-    border: transparent;
+.app-screenshots-area .owl-dot.active span {
+    background-color: #fb397d !important;
+    border: transparent !important;
 }
 
 .app-screenshots-area .owl-dots {
@@ -973,6 +973,10 @@ p {
     border-color: #fb397d;
 }
 
+.slick-arrow {
+    background-color: #fb397d !important;
+}
+
 .clients-feedback-area .slick-slide.client-thumbnail {
     display: -moz-flex;
     display: -ms-flex;
@@ -1005,7 +1009,7 @@ p {
     height: 100px !important;
 }
 
-.clients-feedback-area .slick-arrow {
+/*.clients-feedback-area .slick-arrow {
     position: absolute;
     width: 30px;
     background-color: #fff;
@@ -1018,7 +1022,7 @@ p {
     left: 0;
     z-index: 90;
     cursor: pointer;
-}
+}*/
 
 .clients-feedback-area .slick-arrow.fa-angle-right {
     left: auto;
