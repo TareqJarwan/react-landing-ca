@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import ReactWOW from 'react-wow';
+import CountUp from 'react-countup';
 
 import './App.css';
 
@@ -34,6 +35,7 @@ import app5 from './img/scr-img/app-5.jpg';
 const App = () => {
     let settings = {
         dots: true,
+        autoplay: true,
         infinite: true,
         speed: 500,
         fade: true,
@@ -325,7 +327,11 @@ const App = () => {
                             <div className="single-cool-fact d-flex justify-content-center">
                                 <ReactWOW animation='fadeInUp' delay="0.2s">
                                     <div className="counter-area">
-                                        <h3><span className="counter">90</span></h3>
+                                        <h3>
+                                            <span className="counter">
+                                                <CountUp delay={0.2} end={90}/>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div className="cool-facts-content">
                                         <i className="ion-arrow-down-a"/>
@@ -337,9 +343,13 @@ const App = () => {
                         {/* Single Cool Fact*/}
                         <div className="col-12 col-md-3 col-lg-3">
                             <div className="single-cool-fact d-flex justify-content-center">
-                                <ReactWOW animation='fadeInUp' delay="0.2s">
+                                <ReactWOW animation='fadeInUp' delay="0.4s">
                                     <div className="counter-area">
-                                        <h3><span className="counter">120</span></h3>
+                                        <h3>
+                                            <span className="counter">
+                                                <CountUp delay={0.4} end={120}/>
+                                            </span>
+                                        </h3>
                                     </div>
                                     <div className="cool-facts-content">
                                         <i className="ion-happy-outline"/>
@@ -353,7 +363,7 @@ const App = () => {
                             <div className="single-cool-fact d-flex justify-content-center">
                                 <ReactWOW animation='fadeInUp' delay="0.6s">
                                     <div className="counter-area">
-                                        <h3><span className="counter">40</span></h3>
+                                        <h3><span className="counter"><CountUp delay={0.6} end={40}/></span></h3>
                                     </div>
                                     <div className="cool-facts-content">
                                         <i className="ion-person"/>
@@ -365,9 +375,9 @@ const App = () => {
                         {/* Single Cool Fact*/}
                         <div className="col-12 col-md-3 col-lg-3">
                             <div className="single-cool-fact d-flex justify-content-center">
-                                <ReactWOW animation='fadeInUp' delay="0.2s">
+                                <ReactWOW animation='fadeInUp' delay="0.8s">
                                     <div className="counter-area">
-                                        <h3><span className="counter">10</span></h3>
+                                        <h3><span className="counter"><CountUp delay={0.8} end={200}/></span></h3>
                                     </div>
                                     <div className="cool-facts-content">
                                         <i className="ion-ios-star-outline"/>
@@ -399,8 +409,7 @@ const App = () => {
                             {/* App Screenshots Slides  */}
                             <OwlCarousel
                                 className="app_screenshots_slides owl-theme owl-carousel" loop margin={10} dots
-                                items={5}
-                                dotsEach autoplay autoplayHoverPause center>
+                                items={5} dotsEach autoplay autoplayHoverPause center>
                                 <div className="single-shot">
                                     <img src={app1} alt=""/>
                                 </div>
