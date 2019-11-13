@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import ReactWOW from 'react-wow';
+
 import './App.css';
 
 import OwlCarousel from 'react-owl-carousel';
@@ -119,8 +121,10 @@ const App = () => {
                     </div>
                 </div>
                 {/* Welcome thumb */}
-                <div className="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
-                    <img src={welcomeImg} alt=""/>
+                <div className="welcome-thumb">
+                    <ReactWOW animation='fadeInDown' delay="0.5s">
+                        <img src={welcomeImg} alt=""/>
+                    </ReactWOW>
                 </div>
             </section>
             {/* ***** Wellcome Area End ***** */}
@@ -139,35 +143,44 @@ const App = () => {
                     <div className="row">
                         {/* Single Special Area */}
                         <div className="col-12 col-md-4">
-                            <div className="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
-                                <div className="single-icon">
-                                    <i className="ti-mobile" aria-hidden="true"/>
-                                </div>
-                                <h4>Easy to use</h4>
-                                <p>We build pretty complex tools and this allows us to take designs and turn them into
-                                    functional quickly and easily</p>
+                            <div className="single-special text-center">
+                                <ReactWOW animation='fadeInUp' delay="0.2s">
+                                    <div className="single-icon">
+                                        <i className="ti-mobile" aria-hidden="true"/>
+                                    </div>
+                                    <h4>Easy to use</h4>
+                                    <p>We build pretty complex tools and this allows us to take designs and turn them
+                                        into
+                                        functional quickly and easily</p>
+                                </ReactWOW>
                             </div>
                         </div>
                         {/* Single Special Area */}
                         <div className="col-12 col-md-4">
-                            <div className="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
-                                <div className="single-icon">
-                                    <i className="ti-ruler-pencil" aria-hidden="true"/>
-                                </div>
-                                <h4>Powerful Design</h4>
-                                <p>We build pretty complex tools and this allows us to take designs and turn them into
-                                    functional quickly and easily</p>
+                            <div className="single-special text-center">
+                                <ReactWOW animation='fadeInUp' delay="0.4s">
+                                    <div className="single-icon">
+                                        <i className="ti-ruler-pencil" aria-hidden="true"/>
+                                    </div>
+                                    <h4>Powerful Design</h4>
+                                    <p>We build pretty complex tools and this allows us to take designs and turn them
+                                        into
+                                        functional quickly and easily</p>
+                                </ReactWOW>
                             </div>
                         </div>
                         {/* Single Special Area */}
                         <div className="col-12 col-md-4">
-                            <div className="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
-                                <div className="single-icon">
-                                    <i className="ti-settings" aria-hidden="true"/>
-                                </div>
-                                <h4>Customizability</h4>
-                                <p>We build pretty complex tools and this allows us to take designs and turn them into
-                                    functional quickly and easily</p>
+                            <div className="single-special text-center">
+                                <ReactWOW animation='fadeInUp' delay="0.6s">
+                                    <div className="single-icon">
+                                        <i className="ti-settings" aria-hidden="true"/>
+                                    </div>
+                                    <h4>Customizability</h4>
+                                    <p>We build pretty complex tools and this allows us to take designs and turn them
+                                        into
+                                        functional quickly and easily</p>
+                                </ReactWOW>
                             </div>
                         </div>
                     </div>
@@ -189,19 +202,23 @@ const App = () => {
                                         adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
                                         enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                                     <div className="app-download-area">
-                                        <div className="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
+                                        <div className="app-download-btn">
                                             {/* Google Store Btn */}
-                                            <Link to="#" style={{ textDecoration: 'none', color: 'white' }}>
-                                                <i className="fa fa-android"/>
-                                                <p className="mb-0"><span>available on</span> Google Store</p>
-                                            </Link>
+                                            <ReactWOW animation='fadeInUp' delay="0.2s">
+                                                <Link to="#" style={{textDecoration: 'none', color: 'white'}}>
+                                                    <i className="fa fa-android"/>
+                                                    <p className="mb-0"><span>available on</span> Google Store</p>
+                                                </Link>
+                                            </ReactWOW>
                                         </div>
-                                        <div className="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
+                                        <div className="app-download-btn">
                                             {/* Apple Store Btn */}
-                                            <Link to="#" style={{ textDecoration: 'none', color: 'white' }}>
-                                                <i className="fa fa-apple"/>
-                                                <p className="mb-0"><span>available on</span> Apple Store</p>
-                                            </Link>
+                                            <ReactWOW animation='fadeInDown' delay="0.4s">
+                                                <Link to="#" style={{textDecoration: 'none', color: 'white'}}>
+                                                    <i className="fa fa-apple"/>
+                                                    <p className="mb-0"><span>available on</span> Apple Store</p>
+                                                </Link>
+                                            </ReactWOW>
                                         </div>
                                     </div>
                                 </div>
@@ -305,54 +322,58 @@ const App = () => {
                     <div className="row">
                         {/* Single Cool Fact*/}
                         <div className="col-12 col-md-3 col-lg-3">
-                            <div className="single-cool-fact d-flex justify-content-center wow fadeInUp"
-                                 data-wow-delay="0.2s">
-                                <div className="counter-area">
-                                    <h3><span className="counter">90</span></h3>
-                                </div>
-                                <div className="cool-facts-content">
-                                    <i className="ion-arrow-down-a"/>
-                                    <p>APP <br/> DOWNLOADS</p>
-                                </div>
+                            <div className="single-cool-fact d-flex justify-content-center">
+                                <ReactWOW animation='fadeInUp' delay="0.2s">
+                                    <div className="counter-area">
+                                        <h3><span className="counter">90</span></h3>
+                                    </div>
+                                    <div className="cool-facts-content">
+                                        <i className="ion-arrow-down-a"/>
+                                        <p>APP <br/> DOWNLOADS</p>
+                                    </div>
+                                </ReactWOW>
                             </div>
                         </div>
                         {/* Single Cool Fact*/}
                         <div className="col-12 col-md-3 col-lg-3">
-                            <div className="single-cool-fact d-flex justify-content-center wow fadeInUp"
-                                 data-wow-delay="0.4s">
-                                <div className="counter-area">
-                                    <h3><span className="counter">120</span></h3>
-                                </div>
-                                <div className="cool-facts-content">
-                                    <i className="ion-happy-outline"/>
-                                    <p>Happy <br/> Clients</p>
-                                </div>
+                            <div className="single-cool-fact d-flex justify-content-center">
+                                <ReactWOW animation='fadeInUp' delay="0.2s">
+                                    <div className="counter-area">
+                                        <h3><span className="counter">120</span></h3>
+                                    </div>
+                                    <div className="cool-facts-content">
+                                        <i className="ion-happy-outline"/>
+                                        <p>Happy <br/> Clients</p>
+                                    </div>
+                                </ReactWOW>
                             </div>
                         </div>
                         {/* Single Cool Fact*/}
                         <div className="col-12 col-md-3 col-lg-3">
-                            <div className="single-cool-fact d-flex justify-content-center wow fadeInUp"
-                                 data-wow-delay="0.6s">
-                                <div className="counter-area">
-                                    <h3><span className="counter">40</span></h3>
-                                </div>
-                                <div className="cool-facts-content">
-                                    <i className="ion-person"/>
-                                    <p>ACTIVE <br/>ACCOUNTS</p>
-                                </div>
+                            <div className="single-cool-fact d-flex justify-content-center">
+                                <ReactWOW animation='fadeInUp' delay="0.6s">
+                                    <div className="counter-area">
+                                        <h3><span className="counter">40</span></h3>
+                                    </div>
+                                    <div className="cool-facts-content">
+                                        <i className="ion-person"/>
+                                        <p>ACTIVE <br/>ACCOUNTS</p>
+                                    </div>
+                                </ReactWOW>
                             </div>
                         </div>
                         {/* Single Cool Fact*/}
                         <div className="col-12 col-md-3 col-lg-3">
-                            <div className="single-cool-fact d-flex justify-content-center wow fadeInUp"
-                                 data-wow-delay="0.8s">
-                                <div className="counter-area">
-                                    <h3><span className="counter">10</span></h3>
-                                </div>
-                                <div className="cool-facts-content">
-                                    <i className="ion-ios-star-outline"/>
-                                    <p>TOTAL <br/>APP RATES</p>
-                                </div>
+                            <div className="single-cool-fact d-flex justify-content-center">
+                                <ReactWOW animation='fadeInUp' delay="0.2s">
+                                    <div className="counter-area">
+                                        <h3><span className="counter">10</span></h3>
+                                    </div>
+                                    <div className="cool-facts-content">
+                                        <i className="ion-ios-star-outline"/>
+                                        <p>TOTAL <br/>APP RATES</p>
+                                    </div>
+                                </ReactWOW>
                             </div>
                         </div>
                     </div>
@@ -648,8 +669,10 @@ const App = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <div className="get-started-button wow bounceInDown" data-wow-delay="0.5s">
-                                <Link to="#">Get Started</Link>
+                            <div className="get-started-button">
+                                <ReactWOW animation='bounceInDown' delay="0.5s">
+                                    <Link to="#">Get Started</Link>
+                                </ReactWOW>
                             </div>
                         </div>
                     </div>
