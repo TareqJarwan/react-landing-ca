@@ -9,7 +9,7 @@
 -------------------------- */
 /* --- [Master Stylesheet] ----
 :: 1.0 Base CSS Start
-:: 2.0 Header Area CSS
+:: 2.0 HeaderSection Area CSS
 :: 3.0 Wellcome Area CSS
 :: 4.0 Special Area CSS
 :: 5.0 Features Area CSS
@@ -24,13 +24,12 @@
 :: 14.0 Footer Area CSS Start
 -------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
-@import 'css/bootstrap.min.css';
-@import 'css/animate.css';
-@import 'css/magnific-popup.css';
-@import 'css/slick.css';
-@import 'css/font-awesome.min.css';
-@import 'css/themify-icons.css';
-@import 'css/ionicons.min.css';
+@import 'assets/css/animate.css';
+@import 'assets/css/magnific-popup.css';
+@import 'assets/css/slick.css';
+@import 'assets/css/font-awesome.min.css';
+@import 'assets/css/themify-icons.css';
+@import 'assets/css/ionicons.min.css';
 
 /* --------------------------
 :: 1.0 Base CSS Start
@@ -317,7 +316,7 @@ p {
 }
 
 /* --------------------------
-:: 2.0 Header Area CSS
+:: 2.0 HeaderSection Area CSS
 -------------------------- */
 
 .header_area {
@@ -422,7 +421,7 @@ p {
 -------------------------- */
 
 .wellcome_area {
-    background-image: url(img/bg-img/welcome-bg.png);
+    background-image: url(assets/img/bg-img/welcome-bg.png);
     height: 900px;
     position: relative;
     z-index: 1;
