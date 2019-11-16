@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from "classnames";
-//import {Link} from "react-router-dom";
 import {Link, animateScroll as scroll} from "react-scroll";
 
 const HeaderSection = ({isSticky}) => {
@@ -43,7 +42,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Home
                                             </Link>
-                                            {/*<Link className="nav-link" to="#home">Home</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -54,7 +52,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 About
                                             </Link>
-                                            {/*<Link className="nav-link" to="#about">About</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -65,7 +62,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Features
                                             </Link>
-                                            {/*<Link className="nav-link" to="#features">Features</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -76,7 +72,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Screenshot
                                             </Link>
-                                            {/*<Link className="nav-link" to="#screenshot">Screenshot</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -87,7 +82,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Pricing
                                             </Link>
-                                            {/*<Link className="nav-link" to="#pricing">Pricing</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -98,7 +92,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Testimonials
                                             </Link>
-                                            {/*<Link className="nav-link" to="#testimonials">Testimonials</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -109,7 +102,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Team
                                             </Link>
-                                            {/* <Link className="nav-link" to="#team">Team</Link>*/}
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClass="active"
@@ -120,7 +112,6 @@ const HeaderSection = ({isSticky}) => {
                                                   duration={500}>
                                                 Contact
                                             </Link>
-                                            {/*<Link className="nav-link" to="#contact">Contact</Link>*/}
                                         </li>
                                     </ul>
                                     <div className="sing-up-button d-lg-none">
