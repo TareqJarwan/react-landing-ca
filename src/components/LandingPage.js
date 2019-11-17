@@ -13,35 +13,37 @@ import ScrollToTopSection from "./ScrollToTopSection";
 
 import '../App.css';
 import '../assets/css/responsive.css';
+import OurTeamSection from "./OurTeamSection";
 
 class LandingPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isSticky: false
+            isSticky: true
         }
     }
 
-    componentDidMount() {
-        let self = this;
-        window.onscroll = function () {
-            if (window.pageYOffset > 50) {
-                self.setState({isSticky: true});
-            } else {
-                self.setState({isSticky: false});
-            }
-        };
+    /*componentDidMount() {
+        window.addEventListener('scroll', this.onScroll, {passive: true});
     }
 
+    onScroll = () => {
+        if (window.pageYOffset > 50) {
+            this.setState({isSticky: true});
+        } else {
+            this.setState({isSticky: false});
+        }
+    };
+
     componentWillUnmount() {
-        window.onscroll = null;
-    }
+        window.removeEventListener('scroll', this.onScroll);
+    }*/
 
     render() {
         const {isSticky} = this.state;
 
         return (
-            <div>
+            <div dir={'ltr'}>
                 <HeaderSection isSticky={isSticky}/>
                 <WelcomeSection/>
                 <SpecialAreaSection/>
@@ -49,6 +51,7 @@ class LandingPage extends Component {
                 <CoolFactsAreaSection/>
                 <AppScreenshotsAreaSection/>
                 <CtaSection/>
+                <OurTeamSection/>
                 <ContactUsSection/>
                 <FooterSection/>
                 <ScrollToTopSection/>
