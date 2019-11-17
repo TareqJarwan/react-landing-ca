@@ -29,7 +29,7 @@ const AppScreenshotsAreaSection = () => {
                     <div className="col-12">
                         {/* App Screenshots Slides  */}
                         <OwlCarousel
-                            className="app_screenshots_slides owl-theme owl-carousel" loop margin={10} dots
+                            className="app_screenshots_slides owl-theme owl-carousel" loop margin={30} dots
                             items={5} dotsEach autoplay autoplayHoverPause center>
                             <div className="single-shot">
                                 <img src={app1} alt=""/>

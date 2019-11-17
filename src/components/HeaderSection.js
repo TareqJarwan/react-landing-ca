@@ -1,11 +1,8 @@
 import React from 'react';
 import classNames from "classnames";
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
 const HeaderSection = ({isSticky}) => {
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    };
     return (
         <header className={classNames("header_area animated", {"sticky slideInDown": isSticky},)}>
             <div className="container-fluid">
@@ -16,7 +13,7 @@ const HeaderSection = ({isSticky}) => {
                             <nav className="navbar navbar-expand-lg navbar-light">
                                 {/* Logo */}
                                 <Link className="navbar-brand text-light"
-                                      onClick={scrollToTop}
+                                      to="home"
                                       spy={true}
                                       smooth={true}
                                       offset={-70}
@@ -71,36 +68,6 @@ const HeaderSection = ({isSticky}) => {
                                                   offset={-70}
                                                   duration={500}>
                                                 Screenshot
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link activeClass="active"
-                                                  to="pricing"
-                                                  spy={true}
-                                                  smooth={true}
-                                                  offset={-70}
-                                                  duration={500}>
-                                                Pricing
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link activeClass="active"
-                                                  to="testimonials"
-                                                  spy={true}
-                                                  smooth={true}
-                                                  offset={-70}
-                                                  duration={500}>
-                                                Testimonials
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link activeClass="active"
-                                                  to="team"
-                                                  spy={true}
-                                                  smooth={true}
-                                                  offset={-70}
-                                                  duration={500}>
-                                                Team
                                             </Link>
                                         </li>
                                         <li className="nav-item">
