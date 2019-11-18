@@ -10,34 +10,36 @@ import CtaSection from "./CTASection";
 import ContactUsSection from "./ContactUsSection";
 import FooterSection from "./FooterSection";
 import ScrollToTopSection from "./ScrollToTopSection";
+import OurTeamSection from "./OurTeamSection";
 
 import '../App.css';
 import '../assets/css/responsive.css';
-import OurTeamSection from "./OurTeamSection";
 
 class LandingPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isSticky: true
+            isSticky: false
         }
     }
 
     /*componentDidMount() {
-        window.addEventListener('scroll', this.onScroll, {passive: true});
+        window.addEventListener('scroll', this.onScroll);
     }
-
-    onScroll = () => {
-        if (window.pageYOffset > 50) {
-            this.setState({isSticky: true});
-        } else {
-            this.setState({isSticky: false});
-        }
-    };
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.onScroll);
-    }*/
+    }
+
+    onScroll = () => {
+        if (window.scrollY > 100) {
+            console.log(window.scrollY, true);
+            this.setState({isSticky: true});
+        } else if (window.scrollY < 100) {
+            console.log(window.scrollY, false);
+            this.setState({isSticky: false});
+        }
+    };*/
 
     render() {
         const {isSticky} = this.state;

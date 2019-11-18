@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import LandingPage from "./components/LandingPage";
+import CaptchaPage from "./components/CaptchaPage";
 
 class App extends Component {
     constructor(props) {
@@ -10,7 +11,8 @@ class App extends Component {
 
     render() {
         return (
-            <LandingPage/>
+
+            <CaptchaPage/>
         )
     };
 }
