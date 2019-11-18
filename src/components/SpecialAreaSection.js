@@ -81,7 +81,7 @@ const SpecialAreaSection = () => {
                                     ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
                                     enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                <div className="app-download-area">
+                                <div className="app-download-area" dir={"ltr"}>
                                     <div className="app-download-btn">
                                         {/* Google Store Btn */}
                                         <ReactWOW animation='fadeInUp' delay="0.2s">

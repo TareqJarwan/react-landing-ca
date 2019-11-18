@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const FooterSection = () => {
     return (
         <footer className="footer-social-icon text-center section_padding_70 clearfix"
-                style={{"zIndex": "-101", "position": "fixed", "bottom": "0px", "width": "1146px"}}>
+                style={{"zIndex": "-101", "position": "fixed", "bottom": "0px", "width": "100%"}}>
             {/* footer logo */}
             <div className="footer-text">
                 <h2>Ca.</h2>

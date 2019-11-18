@@ -228,10 +228,16 @@ p {
 }
 
 .section-heading > h2 {
+    text-align: center;
     font-weight: 300;
     color: #5b32b4;
     font-size: 48px;
     margin: 0;
+}
+
+.section-heading > .line-shape {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -404,6 +410,8 @@ p {
 }
 
 .header_area.sticky .menu_area .navbar-brand {
+    margin-right: 15px;
+    margin-left: 15px;
     font-size: 50px;
 }
 
@@ -573,10 +581,16 @@ p {
 }
 
 .special_description_content > h2 {
+    text-align: start;
     color: #5b32b4;
     font-size: 48px;
     margin-bottom: 30px;
 }
+
+.special_description_content > p {
+    text-align: start;
+}
+
 
 .single-special:hover {
     -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
@@ -594,6 +608,8 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     -ms-flex-preferred-size: 1;
     flex-basis: 1px;
     margin-top: 50px;
@@ -646,6 +662,7 @@ p {
 
 .app-download-btn:first-child {
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .app-download-btn a:hover i,
@@ -661,6 +678,7 @@ p {
 
 .single-feature {
     margin-bottom: 50px;
+    text-align: start;
 }
 
 .single-feature > p {
@@ -671,8 +689,9 @@ p {
     color: #fb397d;
     font-size: 30px;
     display: inline-block;
-    float: left;
+    float: right;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .single-feature > h5 {
@@ -1043,11 +1062,13 @@ p {
 }
 
 .membership-description > h2 {
+    text-align: start;
     color: #ffffff;
     font-size: 36px;
 }
 
 .membership-description > p {
+    text-align: start;
     color: #ffffff;
     margin-bottom: 0;
 }
@@ -1093,12 +1114,14 @@ p {
 
 .member-text > h4 {
     font-size: 22px;
+    text-align: center;
     color: #5b32b4;
 }
 
 .member-text > p {
     color: #b5aec4;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .team-hover-effects {
@@ -1165,6 +1188,7 @@ p {
 .email-text > p {
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: start;
 }
 
 .address-text > p > span,
@@ -1173,9 +1197,9 @@ p {
     color: #5b32b4;
 }
 
-.footer-contact-area .line-shape {
+/*.footer-contact-area .line-shape {
     margin-left: 0;
-}
+}*/
 
 .footer-contact-area .heading-text > p {
     margin-top: 50px;
@@ -1224,6 +1248,7 @@ p {
 
 .footer-text > p {
     margin-bottom: 50px;
+    text-align: start;
 }
 
 /* --------------------------

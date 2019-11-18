@@ -4,7 +4,7 @@ import welcomeImg from "../assets/img/bg-img/welcome-img.png";
 
 const WelcomeSection = () => {
     return (
-        <section className="wellcome_area clearfix" id="home">
+        <section className="wellcome_area clearfix" id="home" dir={"ltr"}>
             <div className="container h-100">
                 <div className="row h-100 align-items-center">
                     <div className="col-12 col-md">
